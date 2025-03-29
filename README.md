@@ -77,4 +77,4 @@
 3. Можете также не обрабатывать ситуацию, связанную с выносом элемента за пределы доски
 
 ---
-[![Build status](https://ci.appveyor.com/api/projects/status/k4yd0b5j13twrstt?svg=true)](https://ci.appveyor.com/project/EkaGontsova/ahj_forms)
+[![Build status](https://ci.appveyor.com/api/projects/status/k4yd0b5j13twrstt?svg=true)](https://ci.appveyor.com/project/EkaGontsova/ahj_dnd)
