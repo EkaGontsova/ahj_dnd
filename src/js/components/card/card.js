@@ -5,6 +5,8 @@ export default class Card {
     this.element = document.createElement("li");
     this.element.classList.add("cards__item");
 
+    this.element.classList.add("draggable");
+
     this.text = document.createElement("span");
     this.text.classList.add("cards__text");
     this.text.textContent = message;
@@ -30,7 +32,17 @@ export default class Card {
     this.element.addEventListener("mouseenter", this.onMouseenterHandler);
     this.element.addEventListener("click", this.onClickRemoveHandler);
     this.element.addEventListener("mouseleave", this.onMouseleaveHandler);
+    this.element.addEventListener("mousedown", this.onMouseDownHandler);
+    this.element.addEventListener("mouseup", this.onMouseUpHandler);
   }
+  onMouseDown() {
+    this.element.style.cursor = "grabbing";
+  }
+
+  onMouseUp() {
+    this.element.style.cursor = "grab";
+  }
+
   removeListeners() {
     this.element.removeEventListener("mouseenter", this.onMouseenterHandler);
     this.element.removeEventListener("click", this.onClickRemoveHandler);

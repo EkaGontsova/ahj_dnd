@@ -39,3 +39,11 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+.draggable {
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}

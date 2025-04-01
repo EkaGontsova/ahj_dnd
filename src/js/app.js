@@ -13,7 +13,7 @@ export default class App {
     this.container = new Container();
 
     this.columnTodo = new Column("todo", "todo");
-    this.columnProgress = new Column("in progress", "inprogress");
+    this.columnProgress = new Column("in progress", "in_progress");
     this.columnDone = new Column("done", "done");
 
     this.dnd = new DnD();
